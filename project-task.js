@@ -75,8 +75,8 @@ console.log(priorityTasks);
   // 🧪 Console Test Your Work
   // ============================================
   
-  console.log("Incomplete Tasks:", incompleteTasks);
-  console.log("Sorted by Priority:", priorityTasks);
-  console.log("All Tasks Completed:", allTasksCompleted);
-  console.log("Sorted Incomplete Tasks:", combinedFilter);
+  console.log("Incomplete Tasks:", .);
+  // console.log("Sorted by Priority:", ...);
+  // console.log("All Tasks Completed:", ...);
+  // console.log("Sorted Incomplete Tasks:", ...);
   
