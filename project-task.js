@@ -29,7 +29,7 @@ const todos = [
   // ============================================
   // 🔍 Tasks
   // ============================================
-  
+
   /*
   🔹 Task 1: Filter Incomplete Tasks
   
@@ -38,16 +38,17 @@ const todos = [
   2. Use an anonymous function as the callback.
   3. Return only the tasks that are not completed.
   */
-  
+  const incompleteTasks = todos.filter(todo => !todo.completed);// Filter for incomplete tasks
+  console.log(incompleteTasks);
   /*
   🔹 Task 2: Sort Tasks by Priority
-  
   Step-by-Step:
   1. Use the `sort()` method on the todos array.
   2. Use an anonymous function as the comparison function.
   3. Sort tasks in ascending order of priority (1 = highest).
   */
-
+const priorityTasks = todos.sort((a, b) => a.priority - b.priority);
+console.log(priorityTasks);
   /*
   🔹 Task 3: Combine Filters
   
@@ -56,6 +57,8 @@ const todos = [
   2. Then, sort the filtered results by priority using `sort()`.
   3. Use method chaining to perform both steps together.
   */
+ const combinedFilter = todos.filter(todo => !todo.completed).sort((a, b) => a.priority - b.priority);
+  console.log(combinedFilter);
 
   /*
   🔹 Task 4: Mark All Tasks as Completed
@@ -65,13 +68,15 @@ const todos = [
   2. Use an anonymous function to modify each object.
   3. Change the `completed` property to `true` for every task.
   */
-  
+  const allTasksCompleted = todos.map(todo => ({ ...todo, completed: true }));
+  console.log(allTasksCompleted);
+
   // ============================================
   // 🧪 Console Test Your Work
   // ============================================
   
-  // console.log("Incomplete Tasks:", ...);
-  // console.log("Sorted by Priority:", ...);
-  // console.log("All Tasks Completed:", ...);
-  // console.log("Sorted Incomplete Tasks:", ...);
+  console.log("Incomplete Tasks:", incompleteTasks);
+  console.log("Sorted by Priority:", priorityTasks);
+  console.log("All Tasks Completed:", allTasksCompleted);
+  console.log("Sorted Incomplete Tasks:", combinedFilter);
   
