@@ -58,7 +58,7 @@ console.log(priorityTasks);
   3. Use method chaining to perform both steps together.
   */
  const combinedFilter = todos.filter(todo => !todo.completed).sort((a, b) => a.priority - b.priority);
-  console.log(combinedFilter);
+ console.log(combinedFilter);
 
   /*
   🔹 Task 4: Mark All Tasks as Completed
@@ -70,13 +70,12 @@ console.log(priorityTasks);
   */
   const allTasksCompleted = todos.map(todo => ({ ...todo, completed: true }));
   console.log(allTasksCompleted);
-
   // ============================================
   // 🧪 Console Test Your Work
   // ============================================
   
-  console.log("Incomplete Tasks:", .);
-  // console.log("Sorted by Priority:", ...);
-  // console.log("All Tasks Completed:", ...);
-  // console.log("Sorted Incomplete Tasks:", ...);
-  
+  console.log("Incomplete Tasks:", incompleteTasks);
+  console.log("Sorted by Priority:", priorityTasks);
+  console.log("Sorted Incomplete Tasks:", combinedFilter);
+  console.log("All Tasks Completed:", allTasksCompleted);
+
